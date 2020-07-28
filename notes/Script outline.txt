@@ -1,0 +1,37 @@
+DON'T FORGET THESE THINGS:
+An icon
+don't say "Made in Gamemaker Studio 2"
+Gamepad support
+Remember to include licence with source
+Copy font to project
+
+Let's look at the key points:
+We want an ongoing theme of water, so maybe like a leak in Mary's bedroom, a pond with ducks in, go to the well to collect water etc
+Also her dad is missing, away for work or something, so she talks about him in a negative tone
+There is nobody in the town except Mary and her mother
+her mother asks Mary to run some errands
+Mary provides commentary
+There is no way out of the small town (like palette town)
+
+At some key moment, Mary gets pulled back into reality, but the player can mash keys or do some quick time events to prevent her from being pulled through
+Her mother tells her "Don't worry, you've done enough" or something
+She goes to her bedroom and meets some other world-ly figures who talk to her and tell her to go to bed
+Fade to black
+
+Alternative timeline of when you get pulled into reality:
+She chokes awake and spits up water
+Someone tells her she drowned but they've managed to save her
+You spend some time in hospital for a conversation
+Mary then has her final scene in her apartment, you may inspect things to find that she has no surviving family
+Her dad was abusive etc
+Once you have inspected everything, the game fades to black
+
+I'm going to take a more surrealist take on the game:
+You can meet a few people:
+-Get pulled into the wardrobe by a tentacle
+-Meet a duck who grows and you can go inside of
+-Meet two masters of the universe
+
+You deal with problems for them and the way you handle it determines if you get a bad or a good item; all good items gives you a good ending, Mary is at peace with her mother and meets the divine beings
+All bad items gives you the bad ending, you get pulled out of the dream world and resurrected
+Neutral just let's you go to bed and stays quiet
