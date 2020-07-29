@@ -28,4 +28,7 @@ alarm[0]=1;
 //Globals
 global.softPause=false;
 global.font=fnt_consolas;
+global.events=0;
 draw_set_font(global.font);
+
+randomise();

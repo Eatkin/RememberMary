@@ -22,6 +22,21 @@
                     "mipsToGenerate": 0,
                     "scaled": true
                 }
+            },
+            {
+                "Key": 2,
+                "Value": {
+                    "id": "38a1929d-c95a-4031-a8c2-1a6d28207985",
+                    "modelName": "GMTextureGroup",
+                    "mvc": "1.0",
+                    "groupName": "textGroupSewer",
+                    "targets": 461609314234257646,
+                    "autocrop": true,
+                    "border": 2,
+                    "groupParent": "00000000-0000-0000-0000-000000000000",
+                    "mipsToGenerate": 0,
+                    "scaled": true
+                }
             }
         ],
         "Checksum": "ࢺ懜璙ᓆ锯翋꤯맫",

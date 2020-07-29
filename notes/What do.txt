@@ -1,21 +1,11 @@
 Typewriter for choices using choiceFinished[0] and 1
 
-The first trial, tentacle land
-The octopus says she has lost her purse and cannot find it, please help her
-You may save the purse by means of a trade with another being, or by murdering the other being
-There's a lot of water
-
-It can be a maze where you go through tunnels. Maze diagram drawn on wall
-Something like
-  o	  k o   s
-  |_ _| |_ _|
-	|     |
-Except one more level of complexity
-Where k=knife and s=silver coin
-
 Explore themes of the seven deadly sins, i.e. this explores greed and envy
 
 Sewer Texture Page
 
-Eat a stick:
-"It was difficult to choke down that stick and at this point, I'm not sure why I even bothered."
+Previous room settings
+
+Make it so Sophie's dialogue always starts with the same, same with Skylar. Otherwise someone might do everything and never see the premise.
+
+Option to scale up to FHD (i.e. fullscreen switching)

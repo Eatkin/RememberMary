@@ -1,0 +1,3 @@
+/// @description
+
+setEventComplete(Event.TakenKnife);

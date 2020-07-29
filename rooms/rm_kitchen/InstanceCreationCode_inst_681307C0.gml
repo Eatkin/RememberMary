@@ -1,0 +1,1 @@
+linkedInstance=obj_door;

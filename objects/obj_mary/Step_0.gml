@@ -1,8 +1,8 @@
 /// @description
 
 //If anything happens to pause the gameplay, cancel all movement
-if (global.softPause or instance_exists(par_textbox))
-	exit;
+if (global.softPause or !textQueueEmpty())
+	state=State.Talking;
 	
 	
 var hinput=getInput(Input.Hinput);
@@ -11,12 +11,18 @@ var vinput=getInput(Input.Vinput);
 image_speed=1;
 
 switch (state)	{
+	case State.Talking:
+		sprite_index=spriteIdle;
+		if (textQueueEmpty() and !global.softPause)
+			state=State.Idle;
+		break;
+		
 	case State.Idle:
 		sprite_index=spriteIdle;
 		//Move into walk state - basically if hinput OR vinput !=0 and there isn't a collision immediately
 		if ((!place_meeting(x+sign(hinput),y,obj_block) and hinput!=0) or (!place_meeting(x,y+sign(vinput),obj_block) and vinput!=0))
 			state=State.Walk;
-	break;
+		break;
 	
 	case State.Walk:	
 		//Set speeds based on input
@@ -73,7 +79,7 @@ switch (state)	{
 		
 		//Set sprite
 		sprite_index=spriteWalk;
-	break;
+		break;
 }
 
 image_xscale=dir;

@@ -1,5 +1,10 @@
 /// @description
 
+if (!instance_exists(linkedInstance))	{
+	instance_destroy();
+	exit;
+}
+
 if (global.softPause)
 	exit;
 

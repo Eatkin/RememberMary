@@ -1,6 +1,7 @@
 enum State	{
 	Idle,
-	Walk
+	Walk,
+	Talking
 }
 
 enum Input	{
@@ -25,4 +26,13 @@ enum DialogueGrid	{
 enum DialogueType	{
 	Basic,
 	Choice
+}
+
+enum Event	{
+	TakenKnife=1,
+	TakenCoin=2,
+	KilledSophie=4,
+	TakenPurse=8,
+	EatenStick=16,
+	ReturnedPurse=32
 }
