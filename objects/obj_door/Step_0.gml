@@ -9,6 +9,7 @@ if (doorOpened)	{
 	if (sprite_index!=spr_doorOpening)	{
 		sprite_index=spr_doorOpening;
 		image_index=0;
+		audio_play_sound(transition_med_3,0,false);
 	}
 	if (image_index>image_number-1)	{
 		if (!instance_exists(obj_ditherTransition))	{

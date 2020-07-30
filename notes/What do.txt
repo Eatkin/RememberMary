@@ -2,7 +2,7 @@ Typewriter for choices using choiceFinished[0] and 1
 
 Remember texture pages for kitchen, garden, etc
 
-Trim the house song
+Trim the house song (as in equaliser)
 
 Explore themes of the seven deadly sins, i.e. this explores greed and envy
 
@@ -49,3 +49,23 @@ Bad:
 At polishing time, make the dialogue change subtley depending how many sins you've committed
 I.e. the pot is like "A pot of stew for dinner", "Pot of stew" or just "Pot"
 The wet patch can be like "A wet patch. My dad won't fix the leak" or later "Wet carpet. It's from a leak." and if you've commited all sins "It's wet."
+Then also change Mary's animations and 2 or 3 sins, make her walk slower
+
+Endings:
+Ending 1/3: Master of the Universe
+You meet two masters of the Universe and they ask you to join them. You leave your body behind and fly to the stars
+
+Ending 2/3: Mary's Grave
+You meet a strange figure in the end room and they talk to you
+They say they have bad news and that you drowned
+Mary denies it and says no, she's not ready, she has so much she still wants to do
+They say: I'm sorry Mary, there's nothing I can do.
+You're dead.
+(Instantly cut to credits)
+
+Ending 3/3: Resurrection
+Next level is your apartment, you can inspect things but Mary doesn't comment very positively on them
+You go outside and stand on the balcony
+If you interact with the edge she says "I miss my mum. I'm going to try again."
+Cut to front view of her falling off the balcony
+Cut to black

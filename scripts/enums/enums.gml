@@ -38,5 +38,6 @@ enum Event	{
 	TalkedToSkylar=64,
 	TalkedToSophie=128,
 	GotDuckFood=256,
-	TalkedToMum=512
+	TalkedToMum=512,
+	FedBella=1024
 }

@@ -3,7 +3,7 @@
 var trans=instance_create_layer(0,0,"Text",obj_ditherTransition);
 trans.roomToGoto=destination;
 
-var snd=transition_low_1;
+var snd=transition_med_5;
 if (destination==rm_sewer)
 	snd=transition_med_2;
 

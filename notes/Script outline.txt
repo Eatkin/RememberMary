@@ -4,6 +4,7 @@ don't say "Made in Gamemaker Studio 2"
 Gamepad support
 Remember to include licence with source
 Copy font to project
+Options for win/linux etc
 
 Let's look at the key points:
 We want an ongoing theme of water, so maybe like a leak in Mary's bedroom, a pond with ducks in, go to the well to collect water etc

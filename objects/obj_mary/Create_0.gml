@@ -8,3 +8,6 @@ dir=1;					//1 to face right, -1 to face left
 
 spriteIdle=spr_maryIdle;
 spriteWalk=spr_maryWalk;
+
+if (global.sins>=2)
+	walkSpeed=2;
