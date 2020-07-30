@@ -19,5 +19,5 @@ else if (knifeDialogue)	{
 	queueDialogue("Sophie","You're a monster!",spr_axolotlPortrait,DialogueType.Basic);
 	setEventComplete(Event.TakenPurse);
 	setEventComplete(Event.KilledSophie);
-	
+	global.sins+=1;
 }

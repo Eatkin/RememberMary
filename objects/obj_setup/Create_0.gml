@@ -31,4 +31,6 @@ global.font=fnt_consolas;
 global.events=0;
 draw_set_font(global.font);
 
+global.sins=0;
+
 randomise();

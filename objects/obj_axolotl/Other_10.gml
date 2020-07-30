@@ -7,5 +7,8 @@ if (coinDialogue)	{
 	queueDialogue("Sophie","Yes of course. Thanks, Mary. You're a true friend.",spr_axolotlPortrait,DialogueType.Basic);
 	setEventComplete(Event.TakenPurse);
 }
-else if (knifeDialogue)
+else if (knifeDialogue)	{
 	queueDialogue("Mary","Sophie is my friend, I don't want to stab her just because of petty theft.",spr_maryPortrait,DialogueType.Basic);
+	queueDialogue("Sophie","Any luck finding anything nice to trade with me?",spr_axolotlPortrait,DialogueType.Basic);
+	queueDialogue("Mary","Give me a bit more time and I'll find something.",spr_maryPortrait,DialogueType.Basic);
+}

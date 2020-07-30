@@ -1,11 +1,51 @@
 Typewriter for choices using choiceFinished[0] and 1
 
+Remember texture pages for kitchen, garden, etc
+
+Trim the house song
+
 Explore themes of the seven deadly sins, i.e. this explores greed and envy
 
-Sewer Texture Page
+Outside:
+Bullrushes - pointless interactable, but nice to have
+The duck - needs feeds, then he will eat you
 
-Previous room settings
+If you feed the duck, it grows and eat you
+You can get sneezed out again by tickling the tonsils
+In the duck there are three paths to take with different trials and puzzles, you have to get to the end and save the baby ducks
+We can meet mama duck..a duck within a duck.
+She asks you to save the ducks. You pick up the ducks like any other item. They thank you for saving them
+Alternatively you may take a basket of duck plushies from a pressure plate which renders all the ducks inaccessible
+The game warns you of the consequences:
+"I could take this basket of duck plushies instead of rescuing the ducks. It looks like they're on a pressure plate that would leave the baby ducks inaccessible though"
+"If I take the plushies, the baby ducks will die. Take the plushies?
+>No way!
+>Take plushies"
 
-Make it so Sophie's dialogue always starts with the same, same with Skylar. Otherwise someone might do everything and never see the premise.
+Instead of this, have a tap that you open to give you items, but it washes away the baby ducks
 
-Option to scale up to FHD (i.e. fullscreen switching)
+room like this:
+ _____x_____
+|			|
+x	p   	x
+|_____e_____|
+
+The good:
+"Thank you Mary, I don't know what I would do without my baby duckies."
+The bad:
+"What happened? These aren't my babies, this is a basket full of duck plushies."
+"Why haven't you saved my babies? Why are you bringing me this?"
+M: "There was an accident and now...it's impossible to save the ducks."
+"No, that can't be right. My babies cannot be gone. They'll starve on their own."
+"Mary, please, save my babies"
+M: "I can't...but...I brought you these duck plushies?"
+
+Aftermath:
+Good:
+"Thank you so much, Mary. I don't know how I can ever repay you."
+Bad:
+"I think you should leave and let me grieve in peace."
+
+At polishing time, make the dialogue change subtley depending how many sins you've committed
+I.e. the pot is like "A pot of stew for dinner", "Pot of stew" or just "Pot"
+The wet patch can be like "A wet patch. My dad won't fix the leak" or later "Wet carpet. It's from a leak." and if you've commited all sins "It's wet."

@@ -1,1 +1,0 @@
-linkedInstance=obj_bed;

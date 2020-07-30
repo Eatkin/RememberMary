@@ -10,6 +10,7 @@ if (wardrobeOpened and textQueueEmpty() and !takenMary)	{
 	if (sprite_index!=spr_wardrobeTakeMary)	{
 		sprite_index=spr_wardrobeTakeMary;
 		image_index=0;
+		audio_play_sound(transition_low_1,0,false);
 	}
 	
 	//Mary is drawn in after this frame so make her invisible

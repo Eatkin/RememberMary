@@ -34,5 +34,9 @@ enum Event	{
 	KilledSophie=4,
 	TakenPurse=8,
 	EatenStick=16,
-	ReturnedPurse=32
+	ReturnedPurse=32,
+	TalkedToSkylar=64,
+	TalkedToSophie=128,
+	GotDuckFood=256,
+	TalkedToMum=512
 }
