@@ -20,5 +20,51 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 	box.myText=_text;
 	box.portrait=_image;
 	box.owner=_owner;
+	
+	var length=string_length(_text);
+	/*Long talks:
+	1, 3, 4, 5
+	Short talks:
+	2
+	*/
+	var talk=2;
+	if (length>60)	{
+		do	{
+			talk=irandom(4)+1;
+		} until (talk!=2)
+	}
+	
+	//Now we have a random audio file
+	var assetName="Z_Talking_NOTsewer_"+string(talk);
+	//Alt for sewer reverb
+	if (room==clamp(room,rm_sewer,rm_sewerCoinRoom))	{
+		talk=irandom(4)+1;
+		assetName="Z_Talking_sewer_"+string(talk);	
+	}
+	box.mySound=asset_get_index(assetName);
+
+	//Pitch based on the PORTRAIT
+	var pitch=1;
+	switch (_image)	{
+		case spr_octopusPortrait:
+		case spr_otherDuckPortrait:
+			pitch=1.15;
+			break;
+		case spr_axolotlPortrait:
+			pitch=1.1;
+			break;
+		case spr_marysMumPortrait:
+			pitch=0.9;
+			break;
+		case spr_duckPortrait:
+			pitch=1.05;
+			break;
+		default:
+			pitch=1.15;
+			break;
+	}
+	
+	box.myPitch=pitch;
+	
 	removeDialogueFromQueue();			//Removes the queued text
 }

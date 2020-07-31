@@ -16,7 +16,7 @@
         "206278dc-a2ea-4b40-9147-2434e954015d"
     ],
     "filterType": "GMSound",
-    "folderName": "Sexual Transitions",
+    "folderName": "Piano Transitions",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

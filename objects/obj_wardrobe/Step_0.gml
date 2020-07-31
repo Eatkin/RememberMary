@@ -1,7 +1,14 @@
 /// @description
 
 if (active)	{
-	queueDialogue("Mary","Shall I enter the wardrobe?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+	if (global.sins==0)
+		queueDialogue("Mary","Shall I enter the wardrobe?",spr_maryPortrait,DialogueType.Choice,"Let's go!","Not now");
+	else if (global.sins==1)
+		queueDialogue("Mary","Shall I go in the wardrobe?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+	else if (global.sins==2)
+		queueDialogue("Mary","Enter wardrobe?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+	else
+		queueDialogue("Mary","I can't go back. Not after what I've done.",spr_maryPortrait,DialogueType.Basic);
 	active=false;
 }
 

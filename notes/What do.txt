@@ -6,9 +6,25 @@ Trim the house song (as in equaliser)
 
 Explore themes of the seven deadly sins, i.e. this explores greed and envy
 
-Outside:
-Bullrushes - pointless interactable, but nice to have
-The duck - needs feeds, then he will eat you
+Depressing stuff done:
+Topaz Dialogue when you've already revealed your fuck up (Think I did that)
+Everything except InsideDuck dialogue done now
+
+Logic:
+Events for collecting ducklings
+-Can pick up plushies before and after rescuing ducks, it doesn't matter if you've rescued all the ducks
+----Alt dialogue that does'nt warn you
+-If you leave Bella, her dialogue has changed. You can re-enter though. But only if you save the ducklings
+----This needs doing for when you've left and done no rescues
+-Destroy plushes and close doors if ducks are taken already
+
+Return paths from duck rooms
+Actually add the ducks
+Also change the door opening sound
+
+The rooms have 1, 2 and 3 bouncing spikes balls that go on diagonals
+
+Make a rock in one of the duck rooms
 
 If you feed the duck, it grows and eat you
 You can get sneezed out again by tickling the tonsils
@@ -54,18 +70,30 @@ Then also change Mary's animations and 2 or 3 sins, make her walk slower
 Endings:
 Ending 1/3: Master of the Universe
 You meet two masters of the Universe and they ask you to join them. You leave your body behind and fly to the stars
+Mary
+We are masters of the universe
+You have done so much good in this world
+Although life doesn't seem good at times
+Leave your body behind and come with us
+Together we will show you the wonders of the stars
+The wonders of the universe
+Everything there is to see
+Everything there is to know
+Everything
 
-Ending 2/3: Mary's Grave
+Ending 2/3: Mary's End
 You meet a strange figure in the end room and they talk to you
 They say they have bad news and that you drowned
-Mary denies it and says no, she's not ready, she has so much she still wants to do
-They say: I'm sorry Mary, there's nothing I can do.
-You're dead.
+Possibly have Mary's life flash before her eyes, random backgrounds draw and it shows a small animation of her growing from womb to what she is now
+She says; so this is it? There's nothing I can do?
+They say: I'm sorry Mary, there's nothing we can do.
+Mary: This is the end?
+Yep. You're dead.
 (Instantly cut to credits)
 
 Ending 3/3: Resurrection
 Next level is your apartment, you can inspect things but Mary doesn't comment very positively on them
 You go outside and stand on the balcony
-If you interact with the edge she says "I miss my mum. I'm going to try again."
+If you interact with the edge she says "I miss my mum."
 Cut to front view of her falling off the balcony
 Cut to black

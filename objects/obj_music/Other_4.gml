@@ -16,6 +16,14 @@ switch (room)	{
 		musicToPlay=mus_oneOneOne;
 		break;
 		
+	case rm_insideBellaMain:
+	case rm_insideBellaSplitPath:
+	case rm_insideBellaDuck1:
+	case rm_insideBellaDuck2:
+	case rm_insideBellaDuck3:
+		musicToPlay=mus_twoTwo;
+		break;
+		
 	default:
 		musicToPlay=noone;
 }

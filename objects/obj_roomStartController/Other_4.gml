@@ -31,8 +31,34 @@ switch (room)	{
 		break;
 	
 	case rm_garden:
-		if (previousRoom==rm_kitchen)	{
+		obj_mary.dir=-1;
+		if (previousRoom==rm_insideBellaMain)	{
+			obj_mary.x=251;
+			obj_mary.y=216;
+		}
+		break;
+		
+	case rm_insideBellaMain:
+		if (previousRoom==rm_insideBellaSplitPath)	{
 			obj_mary.dir=-1;
+			obj_mary.x=829;
+			obj_mary.y=306;
+		}
+		break;
+		
+	case rm_insideBellaSplitPath:
+		if (previousRoom==rm_insideBellaDuck1)	{
+			obj_mary.x=448;
+			obj_mary.y=128;
+		}
+		else if (previousRoom==rm_insideBellaDuck2)	{
+			obj_mary.x=857;
+			obj_mary.y=322;
+			obj_mary.dir=-1;
+		}
+		else if (previousRoom==rm_insideBellaDuck3)	{
+			obj_mary.x=407;
+			obj_mary.y=423;
 		}
 		break;
 }

@@ -13,3 +13,6 @@ dialogueComplete=false;
 portrait=spr_arbitraryBlock;
 
 owner=noone;
+
+mySound=noone;
+myPitch=1;

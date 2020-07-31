@@ -20,3 +20,5 @@ choice[1]="Define a second choice dick head";
 choiceSelected=0;
 
 owner=noone;
+mySound=noone;
+myPitch=1;

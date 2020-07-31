@@ -14,6 +14,10 @@ var sprite=argument[2];
 var type=argument[3];
 var owner=id;
 
+//Replace Mary's portrait if sins>=2
+if (global.sins>=2 and sprite==spr_maryPortrait)
+	sprite=spr_maryPortraitDepressed;
+
 //If we're an interactable, we want the owner to be the linked instance
 if (object_index==obj_interact)
 	owner=linkedInstance;
