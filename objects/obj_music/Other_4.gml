@@ -24,6 +24,10 @@ switch (room)	{
 		musicToPlay=mus_twoTwo;
 		break;
 		
+	case rm_hedgeMaze:
+		musicToPlay=mus_four4Four;
+		break;
+		
 	default:
 		musicToPlay=noone;
 }

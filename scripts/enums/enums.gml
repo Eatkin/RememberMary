@@ -45,5 +45,7 @@ enum Event	{
 	RescuedDucks=8192,
 	FailedRescue=16384,
 	EatenRock=32768,
-	ToldTopaz=65536			//Told Topaz about the plushies and failed rescue
+	ToldTopaz=65536,			//Told Topaz about the plushies and failed rescue
+	PulledLeverOne=131072,
+	PulledLeverTwo=262144
 }

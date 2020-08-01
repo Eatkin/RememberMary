@@ -36,6 +36,10 @@ switch (room)	{
 			obj_mary.x=251;
 			obj_mary.y=216;
 		}
+		if (previousRoom==rm_hedgeMaze)	{
+			obj_mary.x=167
+			obj_mary.y=87;
+		}
 		break;
 		
 	case rm_insideBellaMain:
@@ -60,5 +64,9 @@ switch (room)	{
 			obj_mary.x=407;
 			obj_mary.y=423;
 		}
+		break;
+	
+	case rm_hedgeMaze:
+		obj_mary.dir=-1;
 		break;
 }

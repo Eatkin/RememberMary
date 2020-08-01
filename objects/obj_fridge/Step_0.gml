@@ -28,7 +28,7 @@ if (active)	{
 		if (global.sins==0)
 			queueDialogue("Mary","Browsing the fridge is fun, but I already got some food for Bella, I don't need anything else right now.",spr_maryPortrait,DialogueType.Basic);
 		else if (global.sins==1)
-			queueDialogue("Mary","I've already got food for Bella. No need to look in the fridge again",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","I've already got food for Bella. No need to look in the fridge again.",spr_maryPortrait,DialogueType.Basic);
 		else if (global.sins==2)
 			queueDialogue("Mary","Blue fridge.",spr_maryPortrait,DialogueType.Basic);
 		else

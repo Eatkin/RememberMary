@@ -1,5 +1,8 @@
 /// @description
 
+if (duckCollected and textQueueEmpty())
+	instance_destroy();
+
 if (active)	{
 	if (global.sins==0)
 		queueDialogue("Mary","One of Topaz's baby ducks! I'll put it in my pocket for later.",spr_maryPortrait,DialogueType.Basic);
@@ -19,5 +22,6 @@ if (active)	{
 			
 		setEventComplete(Event.RescuedDucks);
 	}
+	duckCollected=true;
 	active=false;
 }

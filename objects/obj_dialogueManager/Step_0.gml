@@ -20,27 +20,15 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 	box.myText=_text;
 	box.portrait=_image;
 	box.owner=_owner;
-	
-	var length=string_length(_text);
-	/*Long talks:
-	1, 3, 4, 5
-	Short talks:
-	2
-	*/
-	var talk=2;
-	if (length>60)	{
-		do	{
-			talk=irandom(4)+1;
-		} until (talk!=2)
-	}
+
+	var talk=irandom(4)+1;
 	
 	//Now we have a random audio file
 	var assetName="Z_Talking_NOTsewer_"+string(talk);
 	//Alt for sewer reverb
-	if (room==clamp(room,rm_sewer,rm_sewerCoinRoom))	{
-		talk=irandom(4)+1;
+	if (room==clamp(room,rm_sewer,rm_sewerCoinRoom))
 		assetName="Z_Talking_sewer_"+string(talk);	
-	}
+
 	box.mySound=asset_get_index(assetName);
 
 	//Pitch based on the PORTRAIT
@@ -54,7 +42,7 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 			pitch=1.1;
 			break;
 		case spr_marysMumPortrait:
-			pitch=0.9;
+			pitch=1;
 			break;
 		case spr_duckPortrait:
 			pitch=1.05;

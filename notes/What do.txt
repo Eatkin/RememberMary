@@ -1,71 +1,32 @@
 Typewriter for choices using choiceFinished[0] and 1
 
-Remember texture pages for kitchen, garden, etc
-
 Trim the house song (as in equaliser)
 
-Explore themes of the seven deadly sins, i.e. this explores greed and envy
+BABY DUCKS
+Need to be underneath Mary
+Need to be destroyed upon interaction
+Also little adjustment to the sins=2 dialogue for Topaz
 
-Depressing stuff done:
-Topaz Dialogue when you've already revealed your fuck up (Think I did that)
-Everything except InsideDuck dialogue done now
+Final trial:
+The girl stuck in the hole is called Abigail
+She has got stuck there and her child and bag with rescue rope is at the other side
+You can turn on the water which will drown her, but raise platforms to get you to the other side
+Or you can go through the maze and get her bag and rope to save her and her child
+Additional lever logic:
+-Alt dialogue if it's already been pulled
 
-Logic:
-Events for collecting ducklings
--Can pick up plushies before and after rescuing ducks, it doesn't matter if you've rescued all the ducks
-----Alt dialogue that does'nt warn you
--If you leave Bella, her dialogue has changed. You can re-enter though. But only if you save the ducklings
-----This needs doing for when you've left and done no rescues
--Destroy plushes and close doors if ducks are taken already
+What I've done:
+Giant Rock
+Background
 
-Return paths from duck rooms
-Actually add the ducks
-Also change the door opening sound
+Wwhat to do:
+Talk to the lady in the hole, you can drown her to get to the end of the maze
+Otherwise you have to go pull two levers to get to the end, save the little girl and get a rope from the bag
 
-The rooms have 1, 2 and 3 bouncing spikes balls that go on diagonals
-
-Make a rock in one of the duck rooms
-
-If you feed the duck, it grows and eat you
-You can get sneezed out again by tickling the tonsils
-In the duck there are three paths to take with different trials and puzzles, you have to get to the end and save the baby ducks
-We can meet mama duck..a duck within a duck.
-She asks you to save the ducks. You pick up the ducks like any other item. They thank you for saving them
-Alternatively you may take a basket of duck plushies from a pressure plate which renders all the ducks inaccessible
-The game warns you of the consequences:
-"I could take this basket of duck plushies instead of rescuing the ducks. It looks like they're on a pressure plate that would leave the baby ducks inaccessible though"
-"If I take the plushies, the baby ducks will die. Take the plushies?
->No way!
->Take plushies"
-
-Instead of this, have a tap that you open to give you items, but it washes away the baby ducks
-
-room like this:
- _____x_____
-|			|
-x	p   	x
-|_____e_____|
-
-The good:
-"Thank you Mary, I don't know what I would do without my baby duckies."
-The bad:
-"What happened? These aren't my babies, this is a basket full of duck plushies."
-"Why haven't you saved my babies? Why are you bringing me this?"
-M: "There was an accident and now...it's impossible to save the ducks."
-"No, that can't be right. My babies cannot be gone. They'll starve on their own."
-"Mary, please, save my babies"
-M: "I can't...but...I brought you these duck plushies?"
-
-Aftermath:
-Good:
-"Thank you so much, Mary. I don't know how I can ever repay you."
-Bad:
-"I think you should leave and let me grieve in peace."
-
-At polishing time, make the dialogue change subtley depending how many sins you've committed
-I.e. the pot is like "A pot of stew for dinner", "Pot of stew" or just "Pot"
-The wet patch can be like "A wet patch. My dad won't fix the leak" or later "Wet carpet. It's from a leak." and if you've commited all sins "It's wet."
-Then also change Mary's animations and 2 or 3 sins, make her walk slower
+Then what's left:
+A trophy room that populates when you've completed or failed trials with trophies
+A door in there that's only open when you've completed all trials
+Then the final room which determines your ending
 
 Endings:
 Ending 1/3: Master of the Universe
