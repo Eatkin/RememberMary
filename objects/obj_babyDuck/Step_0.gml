@@ -20,6 +20,7 @@ if (active)	{
 		else if (global.sins==2)
 			queueDialogue("Mary","I have all the ducks. But I'm still empty inside.",spr_maryPortrait,DialogueType.Basic);	
 			
+		global.virtues+=1;
 		setEventComplete(Event.RescuedDucks);
 	}
 	duckCollected=true;

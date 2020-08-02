@@ -1,32 +1,20 @@
 Typewriter for choices using choiceFinished[0] and 1
 
-Trim the house song (as in equaliser)
-
-BABY DUCKS
-Need to be underneath Mary
-Need to be destroyed upon interaction
-Also little adjustment to the sins=2 dialogue for Topaz
-
-Final trial:
-The girl stuck in the hole is called Abigail
-She has got stuck there and her child and bag with rescue rope is at the other side
-You can turn on the water which will drown her, but raise platforms to get you to the other side
-Or you can go through the maze and get her bag and rope to save her and her child
-Additional lever logic:
--Alt dialogue if it's already been pulled
-
-What I've done:
-Giant Rock
-Background
-
-Wwhat to do:
-Talk to the lady in the hole, you can drown her to get to the end of the maze
-Otherwise you have to go pull two levers to get to the end, save the little girl and get a rope from the bag
-
 Then what's left:
 A trophy room that populates when you've completed or failed trials with trophies
+Relevant events:
+KilledSophie (for bad - knife trophy)
+ReturnedPurse (and !KilledSophie for good - purse trophy)
+RescuedDucks (good - duck trophy)
+FailedRescue (bad - empty basket trophy)
+SavedAbigail (good - cat head trophy)
+DrownedAbigail (bad, pipe trophy)
+
 A door in there that's only open when you've completed all trials
 Then the final room which determines your ending
+
+We don't go to the trophy room unless we've already done everything, then it's added as an 'inbetween' room
+We view trophies and go through the open door which determines your ending
 
 Endings:
 Ending 1/3: Master of the Universe
@@ -34,16 +22,16 @@ You meet two masters of the Universe and they ask you to join them. You leave yo
 Mary
 We are masters of the universe
 You have done so much good in this world
-Although life doesn't seem good at times
+Life doesn't seem good at times, but you make the best of it
 Leave your body behind and come with us
 Together we will show you the wonders of the stars
 The wonders of the universe
-Everything there is to see
-Everything there is to know
 Everything
 
+(A transparent Mary descends from her body and flies to the sky with the masters of the Universe)
+
 Ending 2/3: Mary's End
-You meet a strange figure in the end room and they talk to you
+You meet a strange figure in the end room and they talk to you - across a table
 They say they have bad news and that you drowned
 Possibly have Mary's life flash before her eyes, random backgrounds draw and it shows a small animation of her growing from womb to what she is now
 She says; so this is it? There's nothing I can do?

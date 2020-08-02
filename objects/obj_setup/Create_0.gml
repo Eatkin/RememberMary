@@ -32,5 +32,6 @@ global.events=0;
 draw_set_font(global.font);
 
 global.sins=0;
+global.virtues=0;
 
 randomise();

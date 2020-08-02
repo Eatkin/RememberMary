@@ -59,6 +59,7 @@ if (active)	{
 				queueDialogue("Skylar","Thank you Mary, I truly feel complete again.",spr_octopusPortrait,DialogueType.Basic);
 				queueDialogue("Skylar","My god, you still look terrible. I hope whatever's bothering you passes.",spr_octopusPortrait,DialogueType.Basic);
 			}
+			global.virtues+=1;
 		}
 		else	{
 			if (global.sins<=1)	{

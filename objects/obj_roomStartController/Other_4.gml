@@ -14,14 +14,14 @@ switch (room)	{
 			obj_mary.y=436;
 			obj_mary.dir=-1;
 		}
-		if (previousRoom==rm_kitchen)	{
+		if (previousRoom==rm_kitchen or previousRoom==rm_trophyRoom)	{
 			obj_mary.x=154;
 			obj_mary.y=457;
 		}
 		break;
 		
 	case rm_kitchen:
-		if (previousRoom==rm_bedroom)	{
+		if (previousRoom==rm_bedroom or previousRoom==rm_trophyRoom)	{
 			obj_mary.dir=-1;
 		}
 		else	{				//Garden but you can't get to the kitchen any other way
@@ -39,6 +39,7 @@ switch (room)	{
 		if (previousRoom==rm_hedgeMaze)	{
 			obj_mary.x=167
 			obj_mary.y=87;
+			obj_mary.dir=1;
 		}
 		break;
 		
@@ -68,5 +69,13 @@ switch (room)	{
 	
 	case rm_hedgeMaze:
 		obj_mary.dir=-1;
+		break;
+		
+	case rm_trophyRoom:
+		if (previousRoom==rm_bedroom)	{
+			obj_mary.x=802;
+			obj_mary.y=447;
+			obj_mary.dir=-1;
+		}
 		break;
 }

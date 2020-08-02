@@ -18,6 +18,6 @@ else	{
 if (checkEventComplete(myEnum))	{
 	instance_destroy(myBlock);
 	pulledLever=true;
-	image_xscale=-1;
 	x+=sprite_width;
+	image_xscale=-1;
 }

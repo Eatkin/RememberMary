@@ -1,7 +1,7 @@
 /// @description
 
 //Wwe don't move if there's dialogue on screen
-if (!textQueueEmpty())
+if (!textQueueEmpty() or global.softPause)
 	exit;
 
 if (place_meeting(x+xcomponent,y,obj_block))

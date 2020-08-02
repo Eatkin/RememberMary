@@ -1,9 +1,13 @@
 /// @description
 
+var location="garden";
+if (room==rm_hedgeMaze)
+	location="maze";
+
 if (global.sins==0)
-	queueDialogue("Mary", "I think I'll stay in the garden for a while.", spr_maryPortrait, DialogueType.Basic);
+	queueDialogue("Mary", "I think I'll stay in the "+location+" for a while.", spr_maryPortrait, DialogueType.Basic);
 else if (global.sins==1)
-	queueDialogue("Mary", "I'll stay in the garden.", spr_maryPortrait, DialogueType.Basic);
+	queueDialogue("Mary", "I'll stay in the "+location+".", spr_maryPortrait, DialogueType.Basic);
 else if (global.sins==2)
 	queueDialogue("Mary", "Not now.", spr_maryPortrait, DialogueType.Basic);
 else	{
