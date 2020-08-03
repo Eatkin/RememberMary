@@ -10,6 +10,10 @@ FailedRescue (bad - empty basket trophy)
 SavedAbigail (good - cat head trophy)
 DrownedAbigail (bad, pipe trophy)
 
+If you collect ducks before talking to Topaz, you don't get the initial dialogue
+Also: replacing the trophies causes them to become de-linked <--should be fixed
+Also warn player they can't go back going through this door
+
 A door in there that's only open when you've completed all trials
 Then the final room which determines your ending
 

@@ -23,6 +23,7 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 
 	var talk=irandom(4)+1;
 	
+	
 	//Now we have a random audio file
 	var assetName="Z_Talking_NOTsewer_"+string(talk);
 	//Alt for sewer reverb
@@ -47,6 +48,9 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 		case spr_duckPortrait:
 		case spr_catPortrait:
 			pitch=1.05;
+			break;
+		case spr_neutralManPortrait:
+			pitch=0.8;
 			break;
 		default:
 			pitch=1.15;

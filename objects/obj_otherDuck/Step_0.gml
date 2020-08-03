@@ -112,7 +112,7 @@ if (active)	{
 		else if (global.sins==1)	{
 			queueDialogue("Mary","All your ducks are safe and sound.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Topaz","You are a true life saver. What would I do without you?",spr_otherDuckPortrait,DialogueType.Basic);
-			queueDialogue("Mary","Who know?",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","Who knows?",spr_maryPortrait,DialogueType.Basic);
 		}
 		else if (global.sins==2)	{
 			queueDialogue("Mary","I rescued your ducks.",spr_maryPortrait,DialogueType.Basic);

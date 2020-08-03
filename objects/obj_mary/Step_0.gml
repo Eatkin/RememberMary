@@ -1,5 +1,8 @@
 /// @description
 
+if (keyboard_check(vk_shift) and keyboard_check_pressed(ord("N")))
+	room_goto(rm_goodEnd);
+
 //If anything happens to pause the gameplay, cancel all movement
 if (global.softPause or !textQueueEmpty())
 	state=State.Talking;
