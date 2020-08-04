@@ -23,6 +23,10 @@ var vinput=getInput(Input.Vinput);
 if (mouse_check_button(mb_left))	{
 		hinput=sign(mouse_x-x);
 		vinput=sign(mouse_y-y);
+		if (abs(mouse_x-x)<walkSpeed)
+			hinput=0;
+		if (abs(mouse_y-y)<walkSpeed)
+			vinput=0;
 	}
 
 image_speed=1;

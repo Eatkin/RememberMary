@@ -14,7 +14,8 @@ if (active[1] and image_index>image_number-0.5 and !talking)	{
 	obj_mary.visible=true;
 	queueDialogue("???","Oh, thank God.",spr_mushroomPortrait,DialogueType.Basic);
 	queueDialogue("Slater","I'm Slater. I found you face down in the river.",spr_mushroomPortrait,DialogueType.Basic);
-	queueDialogue("Slater","You drowned. Actually you died, your heart stopped for four minutes.",spr_mushroomPortrait,DialogueType.Basic);
+	queueDialogue("Slater","You drowned.",spr_mushroomPortrait,DialogueType.Basic);
+	queueDialogue("Slater","Actually, you technically died. Your heart stopped for four minutes.",spr_mushroomPortrait,DialogueType.Basic);
 	queueDialogue("Slater","But don't worry, you're safe now.",spr_mushroomPortrait,DialogueType.Basic);
 	queueDialogue("Mary","Oh, thank you...I don't know what to say.",spr_maryPortrait,DialogueType.Basic);
 	queueDialogue("Slater","You should probably save your energy, I'll make sure you get home safe.",spr_mushroomPortrait,DialogueType.Basic);
@@ -24,4 +25,4 @@ if (active[1] and image_index>image_number-0.5 and !talking)	{
 }
 
 if (talking and textQueueEmpty())
-	room_goto(room);		//CHANGE
+	room_goto(rm_realBedroom);

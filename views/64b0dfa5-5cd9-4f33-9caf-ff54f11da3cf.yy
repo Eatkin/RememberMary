@@ -15,7 +15,9 @@
         "03a01e75-4c26-405f-8c0f-68691f969c4a",
         "51992e53-58c3-4918-a2d1-e8aa0f2a8dfb",
         "cc5c2d6d-eca1-4490-8692-67364294a73d",
-        "8f8aa766-2095-49f9-8b65-decc2febd1fc"
+        "8f8aa766-2095-49f9-8b65-decc2febd1fc",
+        "5fa2dd26-10bb-4b43-9cbe-3b07cd6bb216",
+        "7aac4dcb-f601-4766-aaa8-313c700f6f2c"
     ],
     "filterType": "GMObject",
     "folderName": "endings",

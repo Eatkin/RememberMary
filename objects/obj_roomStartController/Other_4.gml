@@ -78,4 +78,10 @@ switch (room)	{
 			obj_mary.dir=-1;
 		}
 		break;
+		
+	case rm_realBedroom:
+		if (previousRoom==rm_balcony)	{
+			obj_mary.x=568;
+			obj_mary.y=236;
+		}
 }

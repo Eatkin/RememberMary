@@ -3,8 +3,10 @@
 ticker+=1;
 	
 //Auto-display all text if we press the Z key
-if (!firstFrame and getInput(Input.Interact))	{
-	if (dialogueComplete)	{
+var _continue=max(getInput(Input.Interact),mouse_check_button_pressed(mb_left));
+if (!firstFrame and _continue)	{
+	//Note for mouse only mode, you have to click individual buttons
+	if (dialogueComplete and !global.mouseOnly)	{
 		destroyTriggered=true;
 		var _choice=choiceSelected;
 		with (owner)
@@ -35,11 +37,21 @@ if (!dialogueComplete)	{
 }
 else	{
 	//Move up and down which choice we are selecting
-	var vinput=getInput(Input.VinputPressed);
-	choiceSelected+=vinput;
-	if (choiceSelected<0)
-		choiceSelected+=2;
-	choiceSelected=choiceSelected%2;
+	if (!global.mouseOnly)	{
+		var vinput=getInput(Input.VinputPressed);
+		choiceSelected+=vinput;
+		if (choiceSelected<0)
+			choiceSelected+=2;
+		choiceSelected=choiceSelected%2;
+	}
+	else if (!createdChoices)	{
+		createdChoices=true;
+		//xcreate and ycreate are saved in the draw GUI event
+		choiceA=instance_create_layer(xcreate,ycreate,layer,obj_choiceA);
+		choiceB=instance_create_layer(xcreate+96,ycreate,layer,obj_choiceB);
+		choiceA.owner=id;
+		choiceB.owner=id;
+	}
 }
 
 firstFrame=false;

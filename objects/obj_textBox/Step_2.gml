@@ -3,7 +3,8 @@
 ticker+=1;
 	
 //Auto-display all text if we press the Z key
-if (!firstFrame and getInput(Input.Interact))	{
+var _continue=max(getInput(Input.Interact),mouse_check_button_pressed(mb_left));
+if (!firstFrame and _continue)	{
 	if (dialogueComplete)
 		destroyTriggered=true;
 	else	{

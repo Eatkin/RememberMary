@@ -31,6 +31,11 @@ draw_sprite(spr_dialoguebox,0,xdraw,ydraw);
 xdraw+=h_spacing*4;
 draw_sprite(spr_namebox,0,xdraw,ydraw);
 
+if (xcreate==0)	{
+	xcreate=xdraw-h_spacing*4+sprite_get_width(spr_namebox)*2;
+	ycreate=ydraw-v_spacing*4;
+}
+
 //Draw name
 //Draw name
 var nameHeight=string_height(myName);
@@ -49,11 +54,19 @@ if (dialogueComplete)	{
 	//Now draw the choice dialogues underneath the regular text
 	yy=ydraw+string_height(stringToShow)+2;
 	/*DRAW SELECTION SPRITE HERE!!*/
-	draw_text(xdraw+16,yy,choice[0]);
-	yy+=string_height(choice[0])+2;
-	draw_text(xdraw+16,yy,choice[1]);
+	var _choice;
+	_choice[0]=choice[0];
+	_choice[1]=choice[1];
+	if (global.mouseOnly)	{
+		_choice[0]="a - "+_choice[0];
+		_choice[1]="b - "+_choice[1];
+	}
+	draw_text(xdraw+16,yy,_choice[0]);
+	yy+=string_height(_choice[0])+2;
+	draw_text(xdraw+16,yy,_choice[1]);
 	if (choiceSelected==0)
-		yy-=string_height(choice[0])+2;
+		yy-=string_height(_choice[0])+2;
+	if (!global.mouseOnly)
 	draw_sprite(spr_textSelector,image_index,xdraw-4,yy);
 	//Reset locals to top left of dialouge box
 	xdraw-=4;

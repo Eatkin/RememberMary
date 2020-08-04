@@ -7,14 +7,15 @@ if (active)	{
 	
 	var dialogueType=0;
 	
-	if (!firstTime)
+	if (!firstTime)	{
 		dialogueType=1;
 		
-	if (takenPlushies)
-		dialogueType=2;
+		if (takenPlushies)
+			dialogueType=2;
 		
-	if (rescuedDucks)
-		dialogueType=3;
+		if (rescuedDucks)
+			dialogueType=3;
+	}
 		
 	if (dialogueType==0)	{
 		if (global.sins==0)	{
