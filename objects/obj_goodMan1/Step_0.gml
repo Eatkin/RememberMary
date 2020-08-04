@@ -1,33 +1,51 @@
 /// @description
 
 if (dialogueComplete and textQueueEmpty())	{
+	
+	delay-=1;
 	global.softPause=true;
 	
 	//do stuff
-	if (!instance_exists(obj_maryAscend))	{
+	if (delay<0 and !instance_exists(obj_maryAscend))	{
 		instance_create_layer(obj_mary.x,obj_mary.y,obj_mary.layer,obj_maryAscend);
 		audio_play_sound(transition_med_1,0,false);
 	}
 		
-	y-=timer;
+	y-=min(timer,15);
 	
 	var yy=y;
 	
 	with (obj_goodMan2)
 		y=lerp(y,yy,0.01);
-		
-	with (obj_maryAscend)
-		y=lerp(y,yy,0.01);
-		
-	with (obj_mary)
+	
+	with (obj_mary)	
 		image_alpha=lerp(image_alpha,0,0.01);
+	
+	if (instance_exists(obj_maryAscend))
+		with (obj_maryAscend)	{
+			y=lerp(y,yy,0.012);
+			x=lerp(x,room_width*0.5,0.005);
+			var _dir=sign(x-xprevious);
+			if (_dir!=0)
+				image_xscale=_dir;
+		}
 	
 	timer=lerp(timer,15,0.01);
 	
 	var cam=view_camera[0];
 	var camy=camera_get_view_y(cam);
-	if (camy-timer<0)
-		room_goto(rm_endingScreen);
+	camera_set_view_speed(cam,-1,timer);
+	if (camy<540 and !instance_exists(obj_fadeOutTransition))	{
+		var trans=instance_create_layer(0,0,"Text",obj_fadeOutTransition);
+		trans.destination=rm_endingScreen;
+	}
+	
+	if (instance_exists(obj_fadeOutTransition))	{
+		var camyborder=camera_get_view_border_y(cam);
+		camyborder=lerp(camyborder,32,0.02);
+		camera_set_view_border(cam,96,camyborder);
+	}
+
 }
 
 if (active)	{

@@ -1,7 +1,7 @@
 /// @description
 
-var windowWidth=room_width;
-var windowHeight=room_height;
+windowWidth=room_width;
+windowHeight=room_height;
 
 var scale=1;
 
@@ -35,3 +35,5 @@ global.sins=0;
 global.virtues=0;
 
 randomise();
+
+isFullscreen=false;

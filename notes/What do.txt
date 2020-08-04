@@ -10,39 +10,10 @@ FailedRescue (bad - empty basket trophy)
 SavedAbigail (good - cat head trophy)
 DrownedAbigail (bad, pipe trophy)
 
-If you collect ducks before talking to Topaz, you don't get the initial dialogue
+If you collect ducks before talking to Topaz, you don't get the initial dialogue <-- Need to do this but it's really boring
 Also: replacing the trophies causes them to become de-linked <--should be fixed
 Also warn player they can't go back going through this door
-
-A door in there that's only open when you've completed all trials
-Then the final room which determines your ending
-
-We don't go to the trophy room unless we've already done everything, then it's added as an 'inbetween' room
-We view trophies and go through the open door which determines your ending
-
-Endings:
-Ending 1/3: Master of the Universe
-You meet two masters of the Universe and they ask you to join them. You leave your body behind and fly to the stars
-Mary
-We are masters of the universe
-You have done so much good in this world
-Life doesn't seem good at times, but you make the best of it
-Leave your body behind and come with us
-Together we will show you the wonders of the stars
-The wonders of the universe
-Everything
-
-(A transparent Mary descends from her body and flies to the sky with the masters of the Universe)
-
-Ending 2/3: Mary's End
-You meet a strange figure in the end room and they talk to you - across a table
-They say they have bad news and that you drowned
-Possibly have Mary's life flash before her eyes, random backgrounds draw and it shows a small animation of her growing from womb to what she is now
-She says; so this is it? There's nothing I can do?
-They say: I'm sorry Mary, there's nothing we can do.
-Mary: This is the end?
-Yep. You're dead.
-(Instantly cut to credits)
+^Finish this off- user events 0 and 1 need filling with dialogue
 
 Ending 3/3: Resurrection
 Next level is your apartment, you can inspect things but Mary doesn't comment very positively on them
@@ -50,3 +21,32 @@ You go outside and stand on the balcony
 If you interact with the edge she says "I miss my mum."
 Cut to front view of her falling off the balcony
 Cut to black
+
+Here's a text dump:
+Detect if browser size is smaller than game size, if so we ask if it’s a mobile
+If mobile, we need to resize ignoring orientation
+Warn mobile users graphics may be blurry due to resolution issues
+or clicking interactives, get the min box left between the obj and it’s linked instance
+Oh don’t forget a way of continuing text boxes and making choices on mobile - just click
+Choices though - we need to add a button for one and two and set the choice box to display 1. and 2. instead of the usual
+Don’t forget to normalise mobile movement using arctan2
+Also mouse only mode. And mobile has a spazzy thing where she’s oscillates so set a min distance between x and mouse x - the min dist will be Mary's speed
+
+Also some things not to forget:
+DON'T FORGET THESE THINGS:
+An icon
+don't say "Made in Gamemaker Studio 2"
+Gamepad support
+Remember to include licence with source
+Copy font to project
+Options for win/linux etc
+When you reset the game, reset the duck map as well!! (and list) and global.sins and global.virtues
+Credits screen
+Texture Pages
+Add alt interact keys
+Allow gamepad to do all controls
+
+Little menu screen - browser and Win target are the same
+Option for MOUSE ONLY mode which will be default for mobile
+Also WASD as alt controls
+If it detects we are on a mobile, this is automatic <-- This is a bit of a problem, because tablets won't pick up the resolution thing so need to make sure they check mouse only mode

@@ -52,6 +52,9 @@ if (!instance_exists(obj_textBox) and !ds_grid_height(global.dialogueGrid)==0)	{
 		case spr_neutralManPortrait:
 			pitch=0.8;
 			break;
+		case spr_mushroomPortrait:
+			pitch=0.9;
+			break;
 		default:
 			pitch=1.15;
 			break;

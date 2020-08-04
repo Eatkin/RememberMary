@@ -12,7 +12,7 @@
         "49e7d315-a13a-4068-810e-21af4e6c500b",
         "cb749b81-7dff-457a-b963-2328237b2435",
         "bc432d7e-31a9-4896-8f9e-0d9f8e074596",
-        "3f84fe32-c6ae-4191-abc9-f77769cabe73"
+        "350bc237-60e7-4bb2-8068-ada928f9ab61"
     ],
     "filterType": "GMSprite",
     "folderName": "endings",

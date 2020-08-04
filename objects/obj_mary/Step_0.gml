@@ -1,7 +1,15 @@
 /// @description
 
-if (keyboard_check(vk_shift) and keyboard_check_pressed(ord("N")))
-	room_goto(rm_goodEnd);
+//DEBUG, REMOVE BELOW
+if (keyboard_check(vk_shift))	{
+	if (keyboard_check_pressed(ord("B")))
+		room_goto(rm_goodEnd);
+	if (keyboard_check_pressed(ord("N")))
+		room_goto(rm_neutralEnd);
+	if (keyboard_check_pressed(ord("M")))
+		room_goto(rm_badEnd);
+}
+//DEBUG, REMOVE ABOVE
 
 //If anything happens to pause the gameplay, cancel all movement
 if (global.softPause or !textQueueEmpty())
@@ -10,6 +18,12 @@ if (global.softPause or !textQueueEmpty())
 	
 var hinput=getInput(Input.Hinput);
 var vinput=getInput(Input.Vinput);
+
+//Alt input using mouse button
+if (mouse_check_button(mb_left))	{
+		hinput=sign(mouse_x-x);
+		vinput=sign(mouse_y-y);
+	}
 
 image_speed=1;
 
