@@ -13,7 +13,7 @@ if (active)	{
 		queueDialogue("Mary","Some ducks.",spr_maryPortrait,DialogueType.Basic);
 	if (allDucks)	{
 		if (global.sins==0)	{
-			queueDialogue("Mary","I've already rescued all her ducks so I could take the plushies too.",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","I've already rescued all Topaz's ducks so I could take the plushies too.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Mary","That would be a really nice things to do for her. Should I take them?",spr_maryPortrait,DialogueType.Choice,"Take plushies","Leave them");
 		}
 		else if (global.sins==1)	{

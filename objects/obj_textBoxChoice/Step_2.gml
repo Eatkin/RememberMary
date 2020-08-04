@@ -47,7 +47,11 @@ else	{
 	else if (!createdChoices)	{
 		createdChoices=true;
 		//xcreate and ycreate are saved in the draw GUI event
-		choiceA=instance_create_layer(xcreate,ycreate,layer,obj_choiceA);
+		var cam=view_camera[0];
+		//Horrible can't be bothered to make local variables for this even though that would take less effort than typing out this really really long comment
+		var xcreate=camera_get_view_x(cam)+display_get_gui_width()*0.5;
+		var ycreate=camera_get_view_y(cam)+display_get_gui_height()*0.5;
+		choiceA=instance_create_layer(xcreate-96,ycreate,layer,obj_choiceA);
 		choiceB=instance_create_layer(xcreate+96,ycreate,layer,obj_choiceB);
 		choiceA.owner=id;
 		choiceB.owner=id;

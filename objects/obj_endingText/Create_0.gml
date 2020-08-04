@@ -10,15 +10,13 @@ else if (global.virtues==3)
 delay=60;
 timer=0;
 
-myMusic=audio_play_sound(mus_oneOneTwo_Toy,0,false);
-
-credits="Remembering Mary\n";
-credits+="A game by Edward Atkin\n";
-credits+="Graphics, story and design by Edward Atkin\n";
-credits+="Music and sound design by Mark Mauer\n";
-credits+="'Remember Mary' name suggested by Tommy van Son\n";
-credits+="Moral support and ideas from Benjamin Fearn\n";
-credits+="\n\n";
+credits="\"Remembering Mary\"\n\n\n\n";
+credits+="A game by Edward Atkin\n\n\n\n";
+credits+="Graphics, story and design\nEdward Atkin\n\n\n\n";
+credits+="Music, sound design and testing\nMark Mauer\n\n\n\n";
+credits+="Game testing and 'Remember Mary' name suggestion\nTommy van Son\n\n\n\n";
+credits+="Game testing, moral support and ideas\nBenjamin Fearn\n\n\n\n";
+credits+="\n\n\n\n\n\n\n\n\n\n";		//10 line breaks incase you were wondering
 credits+="Thank you for Playing!";
 
 creditsDelay=180;

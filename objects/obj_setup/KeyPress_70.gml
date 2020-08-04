@@ -20,6 +20,14 @@ else	{
 		scale+=1;
 		window_set_size(windowWidth*scale,windowHeight*scale);
 		isFullscreen=false;
+		display_reset(0,true);
+		
+		//Recursion lol
+		//Basically, if you "full screen" on mobile, it goes too big for the browser, so instead I'll just call this function again to undo the full screening
+		if (windowWidth*scale>displayWidth or windowHeight*scale>displayHeight)	{
+			event_perform(ev_keypress,ord("F"));
+			exit;
+		}
 	}
 	else	{
 		var ratio=windowWidth/windowHeight;
@@ -33,5 +41,8 @@ else	{
 		}
 		window_set_size(targetWidth,targetHeight);
 		isFullscreen=true;
+		
+		if (windowWidth>displayWidth)
+			display_reset(1,true);
 	}
 }

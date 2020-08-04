@@ -2,8 +2,12 @@
 
 windowWidth=room_width;
 windowHeight=room_height;
+window_set_caption("Remember Mary");
 
 var scale=1;
+
+escapeTimer=0;
+escapeTimerMax=180;
 
 
 //Browser
@@ -28,6 +32,12 @@ while (windowWidth*(scale+1)<displayWidth and windowHeight*(scale+1)<displayHeig
 	
 window_set_size(windowWidth*scale,windowHeight*scale);
 display_set_gui_size(windowWidth,windowHeight);
+display_reset(0,true);
+
+if (windowWidth>displayWidth)	{
+	window_set_size(displayWidth,displayHeight);
+	display_reset(1,true);
+}
 
 alarm[0]=1;
 

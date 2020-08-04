@@ -31,11 +31,6 @@ draw_sprite(spr_dialoguebox,0,xdraw,ydraw);
 xdraw+=h_spacing*4;
 draw_sprite(spr_namebox,0,xdraw,ydraw);
 
-if (xcreate==0)	{
-	xcreate=xdraw-h_spacing*4+sprite_get_width(spr_namebox)*2;
-	ycreate=ydraw-v_spacing*4;
-}
-
 //Draw name
 //Draw name
 var nameHeight=string_height(myName);

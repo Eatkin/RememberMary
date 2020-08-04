@@ -5,6 +5,7 @@ switch (room)	{
 	case rm_kitchen:
 	case rm_garden:
 	case rm_void:
+	case rm_endingScreen:
 		musicToPlay=mus_oneOneTwo_Toy;
 		break;
 		

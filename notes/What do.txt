@@ -1,31 +1,9 @@
-Typewriter for choices using choiceFinished[0] and 1
-
 Possible sounds:
 Rumble in bad ending
 Coughing in bad ending
 
-Here's a text dump:
-Warn mobile users graphics may be blurry due to resolution issues
-Choices though - we need to add a button for one and two and set the choice box to display 1. and 2. instead of the usual
-
 Also some things not to forget:
 DON'T FORGET THESE THINGS:
 An icon
-don't say "Made in Gamemaker Studio 2"
-Remember to include licence with source
-Copy font to project
-Options for win/linux etc
-When you reset the game, reset the duck map as well!! (and list) and global.sins and global.virtues
-Credits screen
-Texture Pages
 
-Little menu screen - browser and Win target are the same
-
-So first - we have a start screen
-It says "Mouse only mode (required for mobile devices)"
-and "Full screen"
-you click them or use keyboard/gamepad
-i.e. if you move mouse, that takes over, but if you press up or down, that takes over
-Will be the most annoying thing but oh well
-
-Hold escape to exit (desktop)
+Probably make a trailer

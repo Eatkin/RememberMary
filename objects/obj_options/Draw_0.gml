@@ -32,7 +32,8 @@ for (var i=0; i<2; i+=1)	{
 
 draw_set_font(global.font);
 draw_set_valign(fa_top);
-//Draw note
+//Draw notes
+draw_text(128,160,"Press F to toggle full screen");
 draw_text(128,288,"This is required for mobile devices");
 
 //Update mouse x prev

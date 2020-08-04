@@ -26,6 +26,3 @@ myPitch=1;
 createdChoices=false;
 choiceA=noone;
 choiceB=noone;
-
-xcreate=0;
-ycreate=0;

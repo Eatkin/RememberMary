@@ -25,7 +25,8 @@ if (active)	{
 		}
 		else	{
 			if (global.sins==0)	{
-				queueDialogue("Mary","This will create a path across the hole. I can do it safely now Abigail is out of there. Turn the crank?",spr_maryPortrait,DialogueType.Choice,"Turn the crank", "Maybe later");
+				queueDialogue("Mary","This will create a path across the hole. I can do it safely now Abigail is out of there.",spr_maryPortrait,DialogueType.Basic);
+				queueDialogue("Mary","Turn the crank?",spr_maryPortrait,DialogueType.Choice,"Turn the crank", "Maybe later");
 			}
 			else if (global.sins==1)	{
 				queueDialogue("Mary","I can cross the hole if I turn the water on. Turn the crank?",spr_maryPortrait,DialogueType.Choice,"Turn it", "Not now");

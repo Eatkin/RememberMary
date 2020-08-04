@@ -32,7 +32,7 @@ if (active)	{
 		else if (global.sins==1)
 			queueDialogue("Mary","Should I stab Sophie?",spr_maryPortrait,DialogueType.Choice,"No","Stab her");
 		else if (global.sins==2)
-			queueDialogue("Mary","Get the stabbin gover with??",spr_maryPortrait,DialogueType.Choice,"No","Kill the axolotl");
+			queueDialogue("Mary","Get the stabbing over with??",spr_maryPortrait,DialogueType.Choice,"No","Kill the axolotl");
 		knifeDialogue=true;
 	}
 	else	{

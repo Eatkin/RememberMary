@@ -1,5 +1,10 @@
 /// @description
 
+doNothingTimer+=1;
+
+if (doNothingTimer==600)
+	active=true;
+
 if (shakeStarted and textQueueEmpty())	{
 	timer+=1;
 	//Lol at this

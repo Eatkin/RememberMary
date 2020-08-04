@@ -6,3 +6,5 @@ event_inherited();
 shakeStarted=false;
 timer=0;
 shakex=0;
+
+doNothingTimer=0;

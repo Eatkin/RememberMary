@@ -21,12 +21,32 @@ var vinput=getInput(Input.Vinput);
 
 //Alt input using mouse button
 if (mouse_check_button(mb_left))	{
+	var xComponent=mouse_x-x;
+	if (abs(xComponent)<walkSpeed)
+		xComponent=0;
+	var yComponent=mouse_y-y;
+	if (abs(yComponent)<walkSpeed)
+		yComponent=0;
+	
+	var angle=arctan2(yComponent,xComponent);
+	
+	hinput=walkSpeed*cos(angle);
+	vinput=walkSpeed*sin(angle);
+	
+	//Mary goes crazy when reaching the mouse if I don't do this
+	if (xComponent==0 and yComponent==0)	{
+		hinput=0;
+		vinput=0;
+	}
+	
+	/* OLD CRAPPY METHOD
 		hinput=sign(mouse_x-x);
 		vinput=sign(mouse_y-y);
 		if (abs(mouse_x-x)<walkSpeed)
 			hinput=0;
 		if (abs(mouse_y-y)<walkSpeed)
 			vinput=0;
+			*/
 	}
 
 image_speed=1;
@@ -56,8 +76,10 @@ switch (state)	{
 			//Normalise
 			var factor=sqrt(sqr(xspeed)+sqr(yspeed));
 			//No divide by zero errors pls
-			xspeed*=walkSpeed/factor;
-			yspeed*=walkSpeed/factor;
+			if (factor>1)	{
+				xspeed*=walkSpeed/factor;
+				yspeed*=walkSpeed/factor;
+			}
 		
 			image_speed=sqrt(sqr(xspeed)+sqr(yspeed))/walkSpeed;		//Set image speed  which should be 0 or 1 unless using a gamepad which I haven't implemented yet
 		}
