@@ -1,5 +1,10 @@
 /// @description
 
+/*This is a seperate flag
+Newgrounds sits in an iframe, but itch doesn't because of mobile compatibility
+Newgrounds doesn't let you load in a new window though so I have to do it differently
+*/
+
 windowWidth=room_width;
 windowHeight=room_height;
 window_set_caption("Remember Mary");
@@ -9,24 +14,25 @@ var scale=1;
 escapeTimer=0;
 escapeTimerMax=180;
 
+var displayWidth=display_get_width();
+var displayHeight=display_get_height();
+var scaleAdjustment=1;						//Means on desktop target it won't maximise to fullscreen
 
 //Browser
-if (os_browser==browser_not_a_browser)	{
-	var displayWidth=display_get_width();
-	var displayHeight=display_get_height();	
-	}
-else	{
+if (os_browser!=browser_not_a_browser)	{
 	var displayWidth=browser_width;
 	var displayHeight=browser_height;
 	//If we're in portrait orientation, flip the two variables
-	if (displayHeight>displayWidth)	{
-		var temp=displayWidth;
-		displayWidth=displayHeight;
-		displayHeight=temp;
-	}
+		if (displayHeight>displayWidth)	{
+			var temp=displayWidth;
+			displayWidth=displayHeight;
+			displayHeight=temp;
+		}
+	var scaleAdjustment=0;
 }
 
-while (windowWidth*(scale+1)<displayWidth and windowHeight*(scale+1)<displayHeight)
+
+while (windowWidth*(scale+scaleAdjustment)<displayWidth and windowHeight*(scale+scaleAdjustment)<displayHeight)
 	scale+=1;
 	
 	

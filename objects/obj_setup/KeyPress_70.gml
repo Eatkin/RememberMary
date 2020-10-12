@@ -11,6 +11,8 @@ if (os_browser==browser_not_a_browser)	{
 	window_set_fullscreen(true);
 }
 else	{
+	exit;
+	//LEGACY - this no longer applies
 	//Fullscreening for browsers - this is really confusing and stupid (well I guess not actually stupid, but it did confuse me)
 	var displayWidth=browser_width;
 	var displayHeight=browser_height;

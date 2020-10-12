@@ -44,8 +44,9 @@ if (active)	{
 		}
 		else if (global.sins==2)	{
 			queueDialogue("Mary","Hi.",spr_maryPortrait,DialogueType.Basic);
-			queueDialogue("Bella","Mary, my favourite friend. Hey, are you feeling okay? You don't look yourself",spr_duckPortrait,DialogueType.Basic);
-			queueDialogue("Mary","I'm surviving. I don't know. My day isn't going great. My emotions are spiralling out of control. Violent mood swings. Existential dread. But I'll manage. I hope I will.",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Bella","Mary, my favourite friend. Hey, are you feeling okay? You don't look yourself.",spr_duckPortrait,DialogueType.Basic);
+			queueDialogue("Mary","I'm surviving. I don't know. My day isn't going great.",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","My emotions are spiralling out of control. Violent mood swings. Existential dread. But I'll manage. I hope I will.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Bella","Well you know, if you need someone to talk to...I'm always here.",spr_duckPortrait,DialogueType.Basic);
 			queueDialogue("Bella","I hate to ask, but can you help me with something? I'll show you after I've had something to eat.",spr_duckPortrait,DialogueType.Basic);
 		}

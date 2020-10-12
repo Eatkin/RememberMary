@@ -15,10 +15,12 @@ else	{
 	else if (global.sins==1)
 		queueDialogue("Mary","This is probably the wrong thing to do...",spr_maryPortrait,DialogueType.Basic);
 	else if (global.sins==2)
-		queueDialogue("Mary","This is definitely the wrong thing to do. But why stop now?",spr_maryPortrait,DialogueType.Basic);
+		queueDialogue("Mary","It's time to stop making mistakes.",spr_maryPortrait,DialogueType.Basic);
 		
-	setEventComplete(Event.TakenPlushies);
-	audio_play_sound(transition_low_2,0,false);
-	setEventComplete(Event.FailedRescue);
-	global.sins+=1;
+	if (global.sins!=2)	{
+		setEventComplete(Event.TakenPlushies);
+		audio_play_sound(transition_low_2,0,false);
+		setEventComplete(Event.FailedRescue);
+		global.sins+=1;
+	}
 }

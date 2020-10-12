@@ -1,11 +1,15 @@
 /// @description
 
 //Destroy the arrows so we can no longer go anywhere else
-with (obj_arrow)
-	if (x>80)
-		instance_destroy();
-		
-//Activate the walls
-instance_activate_object(inst_39640F0A);
-instance_activate_object(inst_3C282846);
-instance_activate_object(inst_476B730E);
+if (checkEventComplete(Event.TakenPlushies))	{
+	with (obj_arrow)
+		if (x>80)
+			instance_destroy();
+			
+	
+}
+
+//Create a pressure plate
+var plate=instance_create_layer(576,160,layer,obj_pressurePlate);
+var interact=instance_place(x,y,obj_interact);
+interact.linkedInstance=plate;

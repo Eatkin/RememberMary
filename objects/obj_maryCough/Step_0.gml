@@ -6,8 +6,13 @@ if (!active[1])	{
 		image_index=0;
 }
 
+if (active[1] and image_index>=6 and !coughed)	{
+	audio_play_sound(snd_cough,0,false);
+	coughed=true;
+}
+
 //If active[0] is true we can tap interact to wake Mary up
-if (active[0] and getInput(Input.Interact))
+if (active[0] and (getInput(Input.Interact) or mouse_check_button_pressed(mb_left)))
 	active[1]=true;
 	
 if (active[1] and image_index>image_number-0.5 and !talking)	{

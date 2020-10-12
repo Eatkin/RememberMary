@@ -9,3 +9,26 @@ if (os_browser==browser_not_a_browser)	{
 	else
 		escapeTimer=0;
 }
+else {
+
+	var scale=1;
+
+	var displayWidth=browser_width;
+	var displayHeight=browser_height;
+	//If we're in portrait orientation, flip the two variables
+		if (displayHeight>displayWidth)	{
+			var temp=displayWidth;
+			displayWidth=displayHeight;
+			displayHeight=temp;
+		}
+		
+	while (windowWidth*(scale)<displayWidth and windowHeight*(scale)<displayHeight)
+		scale+=1;
+
+	window_set_size(windowWidth*scale,windowHeight*scale);
+	
+	if (windowWidth>displayWidth)	{
+		window_set_size(displayWidth,displayHeight);
+		display_reset(1,true);
+	}
+}

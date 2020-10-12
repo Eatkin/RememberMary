@@ -21,7 +21,7 @@ if (mouse_x!=mouse_xPrev or mouse_y!=mouse_yPrev)	{
 		selection=1;
 }
 
-var select=max(getInput(Input.Interact),keyboard_check(vk_enter));		//Override with enter as well
+var select=max(getInput(Input.Interact),keyboard_check_pressed(vk_enter));		//Override with enter as well
 
 if (select==0)
 	select=mouse_check_button_pressed(mb_left);

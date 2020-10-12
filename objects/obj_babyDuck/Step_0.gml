@@ -1,9 +1,16 @@
 /// @description
 
-if (duckCollected and textQueueEmpty())
+if (duckCollected and textQueueEmpty())	{
+	var myId=id;
+	with (obj_duckMap)	{
+		ds_map_set(duckMap,myId,false);		//Update the duck map to delete it
+		ducksCollected+=1;
+	}
 	instance_destroy();
+}
 
 if (active)	{
+	setEventComplete(Event.RescuedOneDuck);		//Flags that at least one duck has been rescued
 	if (global.sins==0)
 		queueDialogue("Mary","One of Topaz's baby ducks! I'll put it in my pocket for later.",spr_maryPortrait,DialogueType.Basic);
 	else if (global.sins==1)
@@ -19,8 +26,6 @@ if (active)	{
 			queueDialogue("Mary","That's all of them, I should give them back to Topaz.",spr_maryPortrait,DialogueType.Basic);	
 		else if (global.sins==2)
 			queueDialogue("Mary","I have all the ducks. But I'm still empty inside.",spr_maryPortrait,DialogueType.Basic);	
-			
-		global.virtues+=1;
 		setEventComplete(Event.RescuedDucks);
 	}
 	duckCollected=true;

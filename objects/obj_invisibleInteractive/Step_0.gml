@@ -8,8 +8,10 @@ if (doNothingTimer==600)
 if (shakeStarted and textQueueEmpty())	{
 	timer+=1;
 	//Lol at this
-	if (timer==10)
+	if (timer==10)	{
 		shakex=5;
+		rumble=audio_play_sound(snd_rumble,0,true);
+	}
 	else if (timer==60)
 		shakex=7;
 	else if (timer==120)
@@ -28,7 +30,7 @@ if (shakeStarted and textQueueEmpty())	{
 		room_goto(rm_river);
 }
 
-if (active)	{
+if (active and !shakeStarted)	{
 	queueDialogue("Mary","There's nothing here.",spr_maryPortrait,DialogueType.Basic);
 	active=false;
 	shakeStarted=true;
@@ -37,5 +39,11 @@ if (active)	{
 var cam=view_camera[0];
 camera_set_view_pos(cam,shakex,0);
 camera_set_view_angle(cam,(irandom(2)-1)*irandom(shakex));
+maxShakex=max(maxShakex,shakex);
+
+//Fade the sound in and out
+if (rumble!=noone)
+	audio_sound_gain(rumble,shakex/maxShakex,0);
+	
 shakex=lerp(shakex,0,0.05);
 shakex*=-1;

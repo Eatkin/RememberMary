@@ -34,6 +34,10 @@ switch (room)	{
 		musicToPlay=noone;
 }
 
+//Override this for recording trailer footage
+//musicToPlay=noone;
+//End
+
 alarm[0]=60;
 
 

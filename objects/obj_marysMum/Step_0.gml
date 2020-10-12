@@ -38,7 +38,7 @@ if (active)	{
 			queueDialogue("Elizabeth","Uhh...okay, a bit on the nose, but I do agree with you.",spr_marysMumPortrait,DialogueType.Basic);
 			queueDialogue("Elizabeth","By the way, Mary. I'm proud of you. It'll be okay. I'll be okay.",spr_marysMumPortrait,DialogueType.Basic);
 			queueDialogue("Elizabeth","I love you, Mary. Don't forget that. And my god, what have you been doing? You look awful. Maybe relax a little.",spr_marysMumPortrait,DialogueType.Basic);
-			queueDialogue("Mary","TI don't deserve to be loved..",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","I don't deserve to be loved..",spr_maryPortrait,DialogueType.Basic);
 		}
 		setEventComplete(Event.TalkedToMum);
 	}

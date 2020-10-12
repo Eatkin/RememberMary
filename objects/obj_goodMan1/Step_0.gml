@@ -12,11 +12,14 @@ if (dialogueComplete and textQueueEmpty())	{
 	}
 		
 	y-=min(timer,15);
+	image_speed=1;
 	
 	var yy=y;
 	
-	with (obj_goodMan2)
+	with (obj_goodMan2)	{
 		y=lerp(y,yy,0.01);
+		image_speed=1;
+	}
 	
 	with (obj_mary)	
 		image_alpha=lerp(image_alpha,0,0.01);
@@ -51,7 +54,7 @@ if (dialogueComplete and textQueueEmpty())	{
 if (active)	{
 	queueDialogue("Mary","...hello?",spr_maryPortrait,DialogueType.Basic);
 	queueDialogue("???","Hello, Mary.",spr_goodMan1Portrait,DialogueType.Basic);
-	queueDialogue("???","We are two Masters of the Universe.",spr_goodMan2Portrait,DialogueType.Basic);
+	queueDialogue("???","We are Masters of the Universe.",spr_goodMan2Portrait,DialogueType.Basic);
 	queueDialogue("???","Mary, you have done so much good in this world.",spr_goodMan1Portrait,DialogueType.Basic);
 	queueDialogue("???","Although life doesn't seem good at times, you make the best of it.",spr_goodMan2Portrait,DialogueType.Basic);
 	queueDialogue("???","Everything you did was to help your friends.",spr_goodMan1Portrait,DialogueType.Basic);

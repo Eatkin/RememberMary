@@ -50,5 +50,8 @@ enum Event	{
 	PulledLeverTwo=262144,
 	FilledPool=524288,
 	DrownedAbigail=1048576,
-	SavedAbigail=2097152
+	SavedAbigail=2097152,
+	EndingPrompt=4194304,
+	TopazAddedVirtues=8388608,		//Increase virtues by one when telling Topaz you saved the babies
+	RescuedOneDuck=16777216
 }

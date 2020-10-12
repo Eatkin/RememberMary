@@ -24,7 +24,7 @@ draw_set_font(global.font);
 var height=string_height(credits)+string_count("\n",credits)*sep;
 
 //Reset
-if (abs(yoffset)>height+room_height)	{
+if (abs(yoffset)>height)	{
 	global.sins=0;
 	global.virtues=0;
 	global.events=0;

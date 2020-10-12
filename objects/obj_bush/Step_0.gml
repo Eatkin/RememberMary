@@ -1,14 +1,24 @@
 /// @description
 
 if (active)	{
-	if (global.sins==0)
-		queueDialogue("Mary","This bush looks like it can be entered. How funny.",spr_maryPortrait,DialogueType.Choice,"Go in the bush","Stay out of the bush");
-	else if (global.sins==1)
-		queueDialogue("Mary","Shall I enter the bush?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
-	else if (global.sins==2)
-		queueDialogue("Mary","Go in bush?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
-	else
-		queueDialogue("Mary","Go back?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+	if (checkEventComplete(Event.DrownedAbigail) and room==rm_garden)	{
+		if (global.sins==1)
+			queueDialogue("Mary","The bush refuses to let me back in.",spr_maryPortrait,DialogueType.Basic);
+		else if (global.sins==2)
+			queueDialogue("Mary","The bush rejects me.",spr_maryPortrait,DialogueType.Basic);
+		else
+			queueDialogue("Mary","I can't go back.",spr_maryPortrait,DialogueType.Basic);
+	}
+	else	{
+		if (global.sins==0)
+			queueDialogue("Mary","This bush looks like it can be entered. How funny.",spr_maryPortrait,DialogueType.Choice,"Go in the bush","Stay out of the bush");
+		else if (global.sins==1)
+			queueDialogue("Mary","Shall I enter the bush?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+		else if (global.sins==2)
+			queueDialogue("Mary","Go in bush?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+		else
+			queueDialogue("Mary","Go back?",spr_maryPortrait,DialogueType.Choice,"Yes","No");
+	}
 	active=false;
 }
 

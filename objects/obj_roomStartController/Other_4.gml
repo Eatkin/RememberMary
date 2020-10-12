@@ -85,3 +85,29 @@ switch (room)	{
 			obj_mary.y=236;
 		}
 }
+
+//Ending prompt
+var totalTasks=global.sins+global.virtues;
+if (!checkEventComplete(Event.EndingPrompt) and totalTasks==3)	{
+	setEventComplete(Event.EndingPrompt);
+	if (room==rm_bedroom or room==rm_sewerFork_1)	{
+		if (global.sins==0)
+			queueDialogue("Mary","I've helped out all my friends. Maybe I should spend some time in the garden now.",spr_maryPortrait,DialogueType.Basic);
+		else if (global.sins==1)
+			queueDialogue("Mary","I don't think there's much else to do. Maybe I'll go to the garden.",spr_maryPortrait,DialogueType.Basic);
+		else if (global.sins==2)
+			queueDialogue("Mary","I could do with some fresh air.",spr_maryPortrait,DialogueType.Basic);
+		else
+			queueDialogue("Mary","I need some fresh air.",spr_maryPortrait,DialogueType.Basic);
+	}
+	else	{
+		if (global.sins==0)
+			queueDialogue("Mary","I've had a good day helping my friends. Maybe I'll have a well deserved sleep now.",spr_maryPortrait,DialogueType.Basic);
+		else if (global.sins==1)
+			queueDialogue("Mary","I tried my best today. I think I will go spend some time in my room.",spr_maryPortrait,DialogueType.Basic);
+		else if (global.sins==2)
+			queueDialogue("Mary","I should go to bed and try and forget what happened.",spr_maryPortrait,DialogueType.Basic);
+		else
+			queueDialogue("Mary","If I go to bed maybe I won't wake up.",spr_maryPortrait,DialogueType.Basic);
+	}
+}

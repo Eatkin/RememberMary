@@ -1,6 +1,6 @@
 /// @description
 
-if (!audio_is_playing(myMusic) and alarm[0]==-1)
+if (myMusic!=noone and !audio_is_playing(myMusic) and alarm[0]==-1)
 	audioNotPlaying=true;
 	
 if (audioNotPlaying)	{

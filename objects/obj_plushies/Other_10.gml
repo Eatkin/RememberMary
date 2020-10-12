@@ -17,6 +17,11 @@ else	{
 		queueDialogue("Mary","The toys are nice but I should probably leave them alone, just incase.",spr_maryPortrait,DialogueType.Basic);
 	else if (global.sins==1)
 		queueDialogue("Mary","I should probably leave them.",spr_maryPortrait,DialogueType.Basic);
-	else if (global.sins==2)
-		queueDialogue("Mary","It's time to stop making mistakes.",spr_maryPortrait,DialogueType.Basic);
+	else if (global.sins==2)	{
+		queueDialogue("Mary","This is definitely the wrong thing to do. But why stop now?",spr_maryPortrait,DialogueType.Basic);
+		setEventComplete(Event.TakenPlushies);
+		audio_play_sound(transition_low_2,0,false);
+		setEventComplete(Event.FailedRescue);
+		global.sins+=1;
+	}
 }

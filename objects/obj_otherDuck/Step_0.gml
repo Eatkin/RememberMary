@@ -35,7 +35,7 @@ if (active)	{
 			queueDialogue("Mary","I'll try my best.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Topaz","Thank you, Mary.",spr_otherDuckPortrait,DialogueType.Basic);
 		}
-		else if (global.sins==2)	{
+		else if (global.sins>=2)	{
 			queueDialogue("Mary","Topaz.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Topaz","Mary, my word, you look like shit. I mean, sorry. Are you okay?",spr_otherDuckPortrait,DialogueType.Basic);
 			queueDialogue("Mary","I've had a rough day so far...",spr_maryPortrait,DialogueType.Basic);
@@ -81,7 +81,7 @@ if (active)	{
 				queueDialogue("Topaz","Oh Mary, have you rescued my baby ducklings?",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","Mary, these are not my babies. They are plushies.",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","What happened back there?",spr_otherDuckPortrait,DialogueType.Basic);
-				queueDialogue("Mary","Topaz, I'm sorry, but I can no longer rescue your babies.",spr_maryPortrait,DialogueType.Basic);
+				queueDialogue("Mary","I'm sorry, Topaz. I took these plushies and now the ducklings are trapped.",spr_maryPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","So you brought me plushies instead? To try and trick me? I can't believe you, I thought we were friends!",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","I think you should leave me alone now...",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Mary","Topaz, I'm sorry...",spr_maryPortrait,DialogueType.Basic);
@@ -97,18 +97,23 @@ if (active)	{
 			else if (global.sins==3)	{
 				queueDialogue("Topaz","Are you okay Mary? Have you had any luck finding my babies?",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","...you've given me plushies.",spr_otherDuckPortrait,DialogueType.Basic);
-				queueDialogue("Mary","Your babies will die. There's nothing anyone can do.",spr_maryPortrait,DialogueType.Basic);
+				queueDialogue("Mary","Your babies are trapped. They will die alone. There's nothing anyone can do.",spr_maryPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","What? How could this happen?",spr_otherDuckPortrait,DialogueType.Basic);
-				queueDialogue("Mary","I am filled with sin. I cannot fight it. I am not who I once was. It's too late. I can't go back now.",spr_maryPortrait,DialogueType.Basic);
+				queueDialogue("Mary","I am filled with sin. It's too late. I can't go back now.",spr_maryPortrait,DialogueType.Basic);
 			}
 			setEventComplete(Event.ToldTopaz);
 		}
 	}
 	else if (dialogueType==3)	{
+		if (!checkEventComplete(Event.TopazAddedVirtues))	{
+			global.virtues+=1;
+			setEventComplete(Event.TopazAddedVirtues);
+		}
 		if (global.sins==0)	{
 			queueDialogue("Mary","Hi Topaz. All your ducks are safe and sound.",spr_maryPortrait,DialogueType.Basic);
 			queueDialogue("Topaz","Mary, you are a true life saver. Without you, I don't know what I would have done.",spr_otherDuckPortrait,DialogueType.Basic);
 			queueDialogue("Mary","No problem, Topaz. Any good friend would help you out.",spr_maryPortrait,DialogueType.Basic);
+			queueDialogue("Mary","Bye, Topaz.",spr_maryPortrait,DialogueType.Basic);
 		}
 		else if (global.sins==1)	{
 			queueDialogue("Mary","All your ducks are safe and sound.",spr_maryPortrait,DialogueType.Basic);
@@ -120,6 +125,7 @@ if (active)	{
 			queueDialogue("Topaz","Mary, you are a true life saver.",spr_otherDuckPortrait,DialogueType.Basic);
 			queueDialogue("Mary","I don't just save lives...",spr_maryPortrait,DialogueType.Basic);
 		}
+		/*This is now obselete - can't rescue ducks AND take plushies anymore
 		if (takenPlushies)	{
 			if (global.sins==0)	{
 				queueDialogue("Mary","I found these baby duck plushies too. You can have them.",spr_maryPortrait,DialogueType.Basic);
@@ -134,9 +140,7 @@ if (active)	{
 				queueDialogue("Topaz","Oh wow, these are cute. Thank you.",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","I hope you are okay, Mary. Peace be with you.",spr_otherDuckPortrait,DialogueType.Basic);
 			}
-		}
-		if (global.sins==0)
-			queueDialogue("Mary","Bye, Topaz.",spr_maryPortrait,DialogueType.Basic);
+		}*/
 	}
 	active=false;
 }
