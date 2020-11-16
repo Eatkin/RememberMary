@@ -22,7 +22,7 @@ else {
 			displayHeight=temp;
 		}
 		
-	while (windowWidth*(scale)<displayWidth and windowHeight*(scale)<displayHeight)
+	while (windowWidth*(scale+1)<=displayWidth and windowHeight*(scale+1)<=displayHeight)
 		scale+=1;
 
 	window_set_size(windowWidth*scale,windowHeight*scale);
