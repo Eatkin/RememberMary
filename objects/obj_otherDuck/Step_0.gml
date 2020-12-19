@@ -91,7 +91,7 @@ if (active)	{
 				queueDialogue("Topaz","Mary, these are plushies.",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","Why have you brought me plushies?",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Mary","I don't know. I don't know what's coming over me.",spr_maryPortrait,DialogueType.Basic);
-				queueDialogue("Topaz","You brough me plushies instead of my babies, hoping I wouldn't notice.",spr_otherDuckPortrait,DialogueType.Basic);
+				queueDialogue("Topaz","You brought me plushies instead of my babies, hoping I wouldn't notice.",spr_otherDuckPortrait,DialogueType.Basic);
 				queueDialogue("Topaz","I think you need to leave.",spr_otherDuckPortrait,DialogueType.Basic);
 			}
 			else if (global.sins==3)	{

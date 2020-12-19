@@ -1311,14 +1311,6 @@
             }
         },
         {
-            "Key": "7aac5de9-ca87-445b-a216-e34a27f21f0e",
-            "Value": {
-                "id": "c835b65f-d367-4369-b2ba-e9e485c848d1",
-                "resourcePath": "datafiles_yy\\Licences.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "7b5d0c81-f7f1-49c5-8a20-6f3afc1bf510",
             "Value": {
                 "id": "315a7d21-625a-446a-a396-34d030e3752c",
@@ -1876,6 +1868,14 @@
                 "id": "c51b4dd1-37c2-4b16-b9da-456d0aa84167",
                 "resourcePath": "sprites\\spr_gradientBackground\\spr_gradientBackground.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "beb5beee-86c4-4788-92f4-81b8e1225800",
+            "Value": {
+                "id": "4e5b3d8e-4a55-409c-87e4-c931921646ff",
+                "resourcePath": "datafiles_yy\\Licences.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

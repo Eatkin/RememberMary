@@ -37,8 +37,8 @@ switch (room)	{
 			obj_mary.y=216;
 		}
 		if (previousRoom==rm_hedgeMaze)	{
-			obj_mary.x=167
-			obj_mary.y=87;
+			obj_mary.x=160;
+			obj_mary.y=256;
 			obj_mary.dir=1;
 		}
 		break;
